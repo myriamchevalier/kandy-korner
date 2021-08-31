@@ -15,6 +15,13 @@ export const ProductList = () => {
     []
     )
 
+    useEffect(
+        () =>{
+            console.log("products state changed", products)
+        },
+        [products]
+    )
+
 
     return(
         <>
