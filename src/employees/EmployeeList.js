@@ -6,8 +6,16 @@ export const EmployeeList = () => {
     useEffect(
         () =>{
             fetch("http://localhost:8088/employees?_expand=location")
-        }
+            .then(res => res.json())
+            .then(
+                (employeeData) => {
+                    setEmployees(employeeData)
+                }
+            )
+        },
+        []
     )
+    
     return(
         <>
             <h2>Employees</h2>
