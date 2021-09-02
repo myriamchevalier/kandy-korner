@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react"
 import { useHistory } from "react-router"
-// Form for user to hire employees
-// Create a form for hiring employees. You must be able to choose a location when filling out the form. An employee should have the following information provided.
-
-// Once the user fills out the form, a new employee object representation should be created, then use fetch to POST that object to your database. When the saving process is complete, redirect the user to the /employee route to see a list of all employees.
 
 export const EmployeeHireForm = () => {
     const [ employee, hireEmployee] = useState({
