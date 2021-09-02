@@ -1,5 +1,6 @@
 import React from "react"
 import { Route } from "react-router-dom"
+import { Customers } from "./customers/CustomerList"
 import { EmployeeHireForm } from "./employees/EmployeeForm"
 import { EmployeeList } from "./employees/EmployeeList"
 import { LocationList } from "./locations/LocationList"
@@ -20,8 +21,12 @@ export const ApplicationViews = () => {
                 <EmployeeList/>
             </Route>
 
-            <Route exact path="/employees/create">
+            <Route path="/employees/create">
                 <EmployeeHireForm/>
+            </Route>
+
+            <Route path="/customers">
+                <Customers />
             </Route>
 
             
