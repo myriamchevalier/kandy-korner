@@ -9,6 +9,8 @@ import { ProductList } from "./products/ProductList"
 export const ApplicationViews = () => {
     return (
         <>
+
+        
             <Route path="/locations">
                 <LocationList/>
             </Route>
